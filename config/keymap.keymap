@@ -37,8 +37,6 @@
     input-processors = <&zip_temp_layer 4 250>;
 };
 
-#include <input/processors.dtsi>
-
 &trackball_listener {
     scroller {
         layers = <5>;
