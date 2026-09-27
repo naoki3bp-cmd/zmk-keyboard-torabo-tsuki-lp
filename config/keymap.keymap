@@ -37,22 +37,6 @@
     input-processors = <&zip_temp_layer 4 250>;
 };
 
-&trackball {
-    scroll-layers = <5>;
-
-     arrows {
-         layers = <3>;
-         bindings =
-             <&kp RIGHT>,
-             <&kp LEFT>,
-             <&kp UP>,
-             <&kp DOWN>;
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
-};
-
 / {
     combos {
         compatible = "zmk,combos";
