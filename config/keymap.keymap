@@ -83,11 +83,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans          &trans            &trans            &trans           &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans          &kp LS(NUMBER_2)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp JP_PIPE     &kp SEMICOLON     &kp JP_COLON      &kp JP_LBRACE    &kp JP_RBRACE     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp LS(AT_SIGN) &kp SLASH         &kp JP_YEN        &kp JP_LBRACKET  &kp JP_RBRACKET   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA       &kp PERIOD      &trans            &trans            &kp JP_AT        &kp JP_UNDERSCORE &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans          &trans            &trans           &trans           &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                      &trans          &kp LS(NUMBER_2)  &kp LS(NUMBER_7) &kp LS(NUMBER_8) &kp LS(NUMBER_9)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans            &kp JP_YEN      &kp SEMICOLON     &kp JP_COLON     &kp JP_LBRACE    &kp JP_RBRACE     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp JP_UNDERSCORE &kp LS(AT_SIGN) &kp SLASH         &kp JP_YEN       &kp JP_LBRACKET  &kp JP_RBRACKET   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp COMMA         &kp PERIOD      &trans            &trans           &kp JP_AT        &kp JP_UNDERSCORE &trans
             >;
 
             label = "symbol";
