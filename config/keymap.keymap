@@ -41,10 +41,174 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <2>;
+shift_tab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <12 13>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 10>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 10>;
+        };
+
+        hanzenkaku {
+            bindings = <&switch_hanzenkaku>;
+            key-positions = <13 18>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <13 18>;
+        };
+
+        kagikakko1 {
+            bindings = <&kp JP_LBRACKET>;
+            key-positions = <7 19>;
+        };
+
+        kagikakko2 {
+            bindings = <&kp JP_RBRACKET>;
+            key-positions = <20 8>;
+        };
+
+        kakko1 {
+            bindings = <&kp JP_LPAREN>;
+            key-positions = <5 17>;
+        };
+
+        kakko2 {
+            bindings = <&kp JP_RPAREN>;
+            key-positions = <18 6>;
+        };
+
+        double_quotation {
+            bindings = <&kp JP_DQUOTE>;
+            key-positions = <7 8>;
+        };
+
+        quote {
+            bindings = <&kp JP_QUOTE>;
+            key-positions = <19 20>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <18 7>;
+        };
+
+        back-slash {
+            bindings = <&kp JP_YEN>;
+            key-positions = <6 19>;
+        };
+
+        UnderBar {
+            bindings = <&kp JP_UNDERSCORE>;
+            key-positions = <31 32>;
+        };
+    };
+
+    macros {
+        switch_hanzenkaku: switch_hanzenkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp GRAVE>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SWITCH_HANZENKAKU";
+        };
+
+        windows_v: windows_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
+            label = "WINDOWS_V";
+        };
+
+        copy_upper: copy_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LS(LEFT_ALT)>;
+
+            label = "COPY_UPPER";
+        };
+
+        copy_lower: copy_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LEFT_ALT)>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LS(LEFT_ALT)>;
+
+            label = "COPY_LOWER";
+        };
+
+        kagikakko1_macro: kagikakko1_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp JP_LBRACE>,
+                <&macro_release>,
+                <&kp LSHFT>;
+
+            label = "KAGIKAKKO1_MACRO";
+        };
+
+        kagikakko2_macro: kagikakko2_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp JP_RBRACE>,
+                <&macro_release>,
+                <&kp LSHFT>;
+
+            label = "KAGIKAKKO2_MACRO";
+        };
+
+        asterisc_macro: asterisc_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp NUMBER_8>,
+                <&macro_release>,
+                <&kp LSHFT>;
+
+            label = "asterisc_macro";
         };
     };
 
