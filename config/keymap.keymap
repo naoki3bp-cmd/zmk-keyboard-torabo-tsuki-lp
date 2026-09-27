@@ -38,20 +38,7 @@
 };
 
 &trackball {
-    //automouse-layer = <4>;//
     scroll-layers = <5>;
-
-     arrows {
-         layers = <3>;
-         bindings =
-             <&kp RIGHT>,
-             <&kp LEFT>,
-             <&kp UP>,
-             <&kp DOWN>;
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
 };
 
 / {
